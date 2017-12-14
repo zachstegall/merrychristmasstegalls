@@ -1,0 +1,63 @@
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3.7em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(#000428, #034178);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    padding-bottom: 2em;
+}
+
+h1, h2, h3 {
+    font-family: 'AlwaysHere';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
+
+h1 {
+    padding-bottom: 0.5em;
+}
+
+p {
+    font-family: 'CandyCane';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+div.container {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.vertical-center {
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100%;
+    /* These two lines are counted as one :-)       */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    font-family: 'ShippedGoods';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
