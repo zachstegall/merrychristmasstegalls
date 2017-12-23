@@ -61,3 +61,21 @@ footer {
     font-style: normal;
     text-align: center;
 }
+
+.special-card {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.greeting {
+    font-family: 'Snowhouse';
+}
+
+.intro {
+    font-family: 'SunnyWinter';
+    font-size: 1.8em;
+}
+
+.info {
+    font-family: 'SunnyWinter';
+    font-size: 1.5em;
+}

@@ -12,3 +12,13 @@
     font-family: "ShippedGoods";
     src: url("fonts/ShippedGoods.ttf");
 }
+
+@font-face {
+    font-family: "SunnyWinter";
+    src: url("fonts/SunnyWinter.ttf");
+}
+
+@font-face {
+    font-family: "Snowhouse";
+    src: url("fonts/Snowhouse.otf");
+}

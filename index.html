@@ -21,38 +21,40 @@
 <body class="snowContainer">
     <div class="container">
         <header>
-            <div class="row justify-content-center">
-                <div class="col col-md-2 col-lg-2">
-                    <h2 id="days" class="text-light"></h2>
+            <div id="countdown">
+                <div class="row justify-content-center">
+                    <div class="col col-md-2 col-lg-2">
+                        <h2 id="days" class="text-light"></h2>
+                    </div>
+                    <div class="col col-md-2 col-lg-2">
+                        <h2 id="hours" class="text-light"></h2>
+                    </div>
+                    <div class="col col-md-2 col-lg-2">
+                        <h2 id="minutes" class="text-light"></h2>
+                    </div>
+                    <div class="col col-md-2 col-lg-2">
+                        <h2 id="seconds" class="text-light"></h2>
+                    </div>
                 </div>
-                <div class="col col-md-2 col-lg-2">
-                    <h2 id="hours" class="text-light"></h2>
-                </div>
-                <div class="col col-md-2 col-lg-2">
-                    <h2 id="minutes" class="text-light"></h2>
-                </div>
-                <div class="col col-md-2 col-lg-2">
-                    <h2 id="seconds" class="text-light"></h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col col-md-2 col-lg-2">
-                    <h5 class="text-light">DAYS</h5>
-                </div>
-                <div class="col col-md-2 col-lg-2">
-                    <h5 class="text-light">HRS</h5>
-                </div>
-                <div class="col col-md-2 col-lg-2">
-                    <h5 class="text-light">MIN</h5>
-                </div>
-                <div class="col col-md-2 col-lg-2">
-                    <h5 class="text-light">SEC</h5>
+                <div class="row justify-content-center">
+                    <div class="col col-md-2 col-lg-2">
+                        <h5 class="text-light">DAYS</h5>
+                    </div>
+                    <div class="col col-md-2 col-lg-2">
+                        <h5 class="text-light">HRS</h5>
+                    </div>
+                    <div class="col col-md-2 col-lg-2">
+                        <h5 class="text-light">MIN</h5>
+                    </div>
+                    <div class="col col-md-2 col-lg-2">
+                        <h5 class="text-light">SEC</h5>
+                    </div>
                 </div>
             </div>
         </header>
 
         <div id="content">
-            <h1 class="text-light">It's Almost Here!</h1>
+            <h1 id="poemTitle" class="text-light">It's Almost Here!</h1>
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-6 col-md-6">
                     <p class="text-light">
@@ -76,8 +78,9 @@
 
     <script>
         $(document).ready(function() {
-            startCountdown();
-            startSnow();
+            if (startCountdown()) {
+                startSnow();
+            }
         });
     </script>
 
